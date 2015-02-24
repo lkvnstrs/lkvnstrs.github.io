@@ -1,0 +1,132 @@
+/* Fonts */
+@font-face {
+    font-family: 'KlinicSlab';
+    src: url('../fonts/KlinicSlabLight.otf') format('opentype');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-hq2e3l');
+    src:url('../fonts/icomoon.eot?#iefix-hq2e3l') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-hq2e3l') format('woff'),
+        url('../fonts/icomoon.ttf?-hq2e3l') format('truetype'),
+        url('../fonts/icomoon.svg?-hq2e3l#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Wrapper */
+.wrapper {
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    margin: auto;
+}
+
+html,
+body {
+    font-family: 'KlinicSlab';
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 20px;
+    font-weight: lighter;
+    color: #558188;
+}
+
+/* Logo animation */
+@keyframes fadeInOut {
+    0% { opacity:1; }
+    40% { opacity:1; }
+    60% { opacity:0; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadeInOut {
+    0% { opacity:1; }
+    40% { opacity:1; }
+    60% { opacity:0; }
+    100% { opacity:0; }
+}
+
+#night-logo {
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+
+/* Icons */
+
+.links {
+    letter-spacing: 8;
+    font-size: 35px;
+    margin: auto;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #558188;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+    color: #304949;
+}
+
+.icon-twitter:before {
+    content: "\e600";
+}
+.icon-github:before {
+    content: "\e601";
+}
+.icon-soundcloud:before {
+    content: "\e603";
+}
+.icon-linkedin:before {
+    content: "\e602";
+}
+
+/* Resize */
+@media only screen and (min-width : 480px) {
+    .wrapper {
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width : 786px) {
+    .wrapper {
+        margin-top: 5%;
+    }
+}
