@@ -1,0 +1,58 @@
+h1, h2 {
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  margin: -70px 0 0 -170px;
+}
+
+.name {
+  font-size: 80px;
+  margin-top: 0px;
+}
+
+.avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  .child {
+    height: auto;
+    padding: 20px;
+
+    top: 20%;
+    left: 30%;
+
+    margin: -70px 0 0 -170px;
+  }
+
+  .name {
+    font-size: 300px;
+  }
+
+  .avatar {
+    width: 700px;
+  }
+}
