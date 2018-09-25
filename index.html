@@ -3,8 +3,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <style>
       h1, h2 {
-        font-family: 'Lato', sans-serif;
-        text-align: center
+        font-family: 'Helvetica', 'Lato', sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 80px;
       }
 
       .parent {
@@ -17,16 +21,35 @@
         padding: 20px;
 
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
 
         margin: -70px 0 0 -170px;
+      }
+
+      .name {
+        margin-top: 0px;
+      }
+
+      .avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+                transition:         transform .8s ease-in-out;
+      }
+
+      .avatar:hover {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
       }
     </style>
   </head>
   <body class='parent'>
     <div class='child'>
-      <h1>luke van seters</h1>
+      <img class='avatar' src="images/headshot.png"/>
+      <h1 class='name'>Luke</h1>
     </div>
   </body>
 </html>
