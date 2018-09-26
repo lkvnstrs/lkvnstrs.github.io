@@ -33,6 +33,11 @@ h1, h2 {
           transition:         transform .8s ease-in-out;
 }
 
+.avatar:active {	
+ -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+}
+
 @media only screen 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
