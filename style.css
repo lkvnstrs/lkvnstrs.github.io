@@ -33,7 +33,7 @@ h1, h2 {
           transition:         transform .8s ease-in-out;
 }
 
-.avatar:active {	
+.avatar:hover {	
  -webkit-transform: rotate(360deg);
          transform: rotate(360deg);
 }
